@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email Div Layout</title>
+    <style>
+      /* Overall container */
+      .email-container {
+        max-width: 602px;
+        margin: 0 auto;
+        background-color: #ebebeb;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* Section blocks */
+      .section-block {
+        margin-bottom: 20px;
+      }
+      .inner-container {
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 16px;
+      }
+      /* Full width images */
+      .img-full {
+        width: 100%;
+        display: block;
+      }
+      .img-center {
+        display: block;
+        margin: 0 auto;
+      }
+      /* Two-column layout (flex based) */
+      .two-column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .column {
+        box-sizing: border-box;
+      }
+      /* You can use fixed widths where needed */
+      .column-274 {
+        width: 274px;
+      }
+      .column-280 {
+        width: 280px;
+      }
+      .column-20 {
+        width: 20px;
+      }
+      /* Text blocks */
+      .text-block {
+        font-size: 12px;
+        line-height: 1.4;
+        color: #000;
+      }
+      .title-large {
+        font-size: 20px;
+        font-family: Helvetica, sans-serif;
+      }
+      .color-red {
+        color: #e74c3c;
+      }
+      .color-blue {
+        color: #0067a5;
+      }
+      .color-yellow {
+        color:#e74c3c;
+      }
+      /* Background color for light sections */
+      .bg-light {
+        background-color: #f9f9f9;
+      }
+      /* Footer styling */
+      .footer {
+        background-color: #e2061e;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+      }
+      .footer .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .footer .contact-info {
+        margin-left: 20px;
+        text-align: left;
+        line-height: 1.2;
+      }
+      .footer a {
+        color: #0c00ff;
+        text-decoration: underline;
+      }
+      .social {
+        margin: 5px;
+      }
+      .unsubscribe {
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Section 1: Browser View Notice -->
+      <div class="section-block" id="section-browser">
+        <div class="inner-container" style="background-color: #f0f0f0; padding: 20px;">
+          <p style="text-align: center; font-size: 12px; margin: 0;">
+            Click <a href="#" target="_blank" style="color: #0c00ff; text-decoration: underline;">here</a>
+            to view this email in your browser.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2: Header Images -->
+      <div class="section-block" id="section-header-images">
+        <div class="inner-container" style="padding: 0;">
+          <!-- First header image -->
+          <div>
+            <img
+              src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/header-2.jpg"
+              alt="Header Image"
+              class="img-full"
+            />
+          </div>
+          <!-- Second header image -->
+          <div>
+            <img
+              src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/amoreiras01_at23660.jpg?1737538638291"
+              alt="Secondary Header"
+              class="img-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: TENDÊNCIAS DO MERCADO -->
+      <div class="section-block" id="section-tendencias">
+        <div class="inner-container">
+          <div class="two-column">
+            <!-- Left Column: Text -->
+            <div class="column column-274">
+              <div class="text-block">
+                <p class="title-large color-yellow" style="margin: 0;">TENDÊNCIAS</p>
+                <p class="title-large color-yellow" style="margin: 0; font-weight: bold;">
+                  DO MERCADO
+                </p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  As marcas Low Cost ou Smart Discount passaram a ter um novo
+                  estatuto. Estão catalogadas como sendo "novas âncoras" em Retail
+                  Parks e Centros Comerciais.
+                </p>
+                <p style="font-size: 14px;">
+                  Para mais informações, <a href="https://bprime.pt/low-cost-ou-smart-discount/" rel="link" style="color: #0c00ff; text-decoration: underline;">clique aqui.</a>
+                </p>
+              </div>
+            </div>
+            <!-- Spacer Column -->
+            <div class="column column-20"></div>
+            <!-- Right Column: Image -->
+            <div class="column column-274">
+              <div style="padding: 5px 16px;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/lowcost_at.jpg?1737107812720"
+                  alt="Low Cost"
+                  style="width: 100%; display: block;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: ABERTURAS -->
+      <div class="section-block bg-light" id="section-aberturas">
+        <div class="inner-container">
+          <div class="two-column">
+            <!-- Left Column: Image -->
+            <div class="column column-280">
+              <div style="text-align: center; padding: 5px;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/novo_bloco1.jpg"
+                  alt="Novo Bloco 1"
+                  style="max-width: 100%;"
+                />
+              </div>
+            </div>
+            <!-- (Optional spacer column if needed) -->
+            <div class="column" style="width: 0;"></div>
+            <!-- Right Column: Text -->
+            <div class="column" style="width: 280px;">
+              <div class="text-block" style="padding: 5px 40px 5px 0;">
+                <p class="title-large color-red" style="margin: 0;">ABERTURAS</p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  Segundo as estimativas, em 2024, verificou-se um aumento de 17% no número de aberturas das lojas Low Cost.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: ORIGEM DAS MARCAS -->
+      <div class="section-block bg-light" id="section-origem">
+        <div class="inner-container">
+          <div class="two-column">
+            <!-- Left Column: Image -->
+            <div class="column" style="width: 280px;">
+              <div style="text-align: center; padding: 5px;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/novo_bloco2.jpg"
+                  alt="Novo Bloco 2"
+                  style="max-width: 100%;"
+                />
+              </div>
+            </div>
+            <!-- (Optional spacer column) -->
+            <div class="column" style="width: 0;"></div>
+            <!-- Right Column: Text -->
+            <div class="column" style="width: 280px;">
+              <div class="text-block" style="padding: 5px 40px 5px 0;">
+                <p class="title-large" style="color: #f1b123; margin: 0;">ORIGEM DAS MARCAS</p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  Oriundas na sua maior parte do norte da Europa, a sua ascenção no mercado retalhista nacional é particularmente notável.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 6: ÉTICA E AMBIENTE -->
+      <div class="section-block bg-light" id="section-etica">
+        <div class="inner-container">
+          <div class="two-column">
+            <!-- Left Column: Image -->
+            <div class="column" style="width: 280px;">
+              <div style="text-align: center; padding: 5px;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/novo_bloco3.jpg"
+                  alt="Novo Bloco 3"
+                  style="max-width: 100%;"
+                />
+              </div>
+            </div>
+            <!-- (Optional spacer column) -->
+            <div class="column" style="width: 0;"></div>
+            <!-- Right Column: Text -->
+            <div class="column" style="width: 280px;">
+              <div class="text-block" style="padding: 5px 40px 5px 0;">
+                <p class="title-large" style="color: #0067a5; margin: 0;">ÉTICA E AMBIENTE</p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  A crescente preocupação em relação a questões éticas e ambientais tem levado as marcas Low Cost a incorporar práticas sustentáveis nas suas operações.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 7: O QUE ESTAMOS A FAZER -->
+      <div class="section-block" id="section-oque">
+        <div class="inner-container">
+          <div class="two-column">
+            <!-- Left Column: Text -->
+            <div class="column" style="width: 274px;">
+              <div class="text-block" style="padding: 5px 16px;">
+                <p class="title-large" style="color: #043959; margin: 0;">O QUE ESTAMOS</p>
+                <p class="title-large" style="color: #043959; margin: 0; font-weight: bold;">A FAZER</p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  A B. Prime comercializa o espaço 7RIOS, em Lisboa, um espaço comercial com uma área aproximada de 12.600m<sup>2</sup>. Para mais informações, <a href="https://bprime.pt/im%C3%B3vel/espaco-7rios-3/" style="color: #0c00ff; text-decoration: underline;">clique aqui</a>.
+                </p>
+              </div>
+            </div>
+            <!-- Spacer Column -->
+            <div class="column column-20"></div>
+            <!-- Right Column: Image -->
+            <div class="column" style="width: 274px;">
+              <div style="text-align: right; padding: 5px 16px;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/espa%C3%A7o_at.jpg?1737107842445"
+                  alt="Espaço"
+                  style="max-width: 100%;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 8: INFORMAÇÃO MERCADO Header -->
+      <div class="section-block" id="section-info-header">
+        <div class="inner-container" style="background-color: #f9f9f9; padding: 30px 0;">
+          <p style="text-align: center; font-size: 20px; color: #e74c3c; margin: 0;">INFORMAÇÃO</p>
+          <p style="text-align: center; font-size: 20px; color: #e74c3c; margin: 0;"><strong>MERCADO</strong></p>
+        </div>
+      </div>
+
+      <!-- Section 9: INFORMAÇÃO MERCADO Details (Three Columns) -->
+      <div class="section-block" id="section-info-details">
+        <div class="inner-container">
+          <div class="two-column" style="justify-content: space-between;">
+            <!-- Column 1: Retalho -->
+            <div class="column" style="width: 176px;">
+              <div style="text-align: center; padding: 0;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/retalhoonline_at.jpg?1737107878321"
+                  alt="Retalho"
+                  style="width: 100%;"
+                />
+              </div>
+              <div class="text-block" style="background-color: #ffffff; padding: 16px;">
+                <p style="font-size: 15px; margin: 0;"><strong>Retalho</strong></p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  A valorização de espaços em localizações prime no segmento de retalho tornaram-se mais estratégicos do que nunca. Torna-se fundamental maximizar o potencial dos seus ativos num mercado dinâmico.
+                </p>
+              </div>
+            </div>
+            <!-- Spacer -->
+            <div class="column" style="width: 20px;"></div>
+            <!-- Column 2: Centros Comerciais -->
+            <div class="column" style="width: 176px;">
+              <div style="text-align: center; padding: 0;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/lojasx_at.jpg?1737107899111"
+                  alt="Centros Comerciais"
+                  style="width: 100%;"
+                />
+              </div>
+              <div class="text-block" style="background-color: #ffffff; padding: 16px;">
+                <p style="font-size: 15px; margin: 0;"><strong>Centros Comerciais</strong></p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  Em 2024 cerca de metade das transações foram registadas em imobiliário comercial, sendo que a maioria envolveu grandes centros comerciais. <br>
+                  <a href="https://bprime.pt/centros-comerciais/" style="color: #0c00ff; text-decoration: underline;">Contacte-nos</a>
+                </p>
+              </div>
+            </div>
+            <!-- Spacer -->
+            <div class="column" style="width: 20px;"></div>
+            <!-- Column 3: Estudos de Mercado -->
+            <div class="column" style="width: 176px;">
+              <div style="text-align: center; padding: 0;">
+                <img
+                  src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/amoreiras01_at.jpg?1737107921257"
+                  alt="Estudos de Mercado"
+                  style="width: 100%;"
+                />
+              </div>
+              <div class="text-block" style="background-color: #ffffff; padding: 16px;">
+                <p style="font-size: 15px; margin: 0;"><strong>Estudos de Mercado</strong></p>
+                <p style="font-size: 14px; margin-top: 10px;">
+                  A B. Prime está a preparar vários estudos sobre a performance do mercado, nomeadamente o já reconhecido Prime Watch e outro temático sobre o Flexwork. Ambos serão divulgados em breve.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- SERVICES SECTION (Converted to div-based layout) -->
+<div id="services-section" style="max-width:600px; margin: 0 auto; background-color: #ffffff; font-size: 0; overflow: hidden;">
+  <div style="display: flex; flex-wrap: nowrap;">
+    <!-- Left Column: Logo Image -->
+    <div style="width:300px; vertical-align: top; display: inline-block;">
+      <div style="text-align: center;">
+        <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/logojpg72.jpg" 
+             alt="Logo" 
+             style="vertical-align: middle; width: 92.67%;" />
+      </div>
+    </div>
+    <!-- Optional Spacer (0px width, can be omitted) -->
+    <div style="width:0px; display: inline-block;"></div>
+    <!-- Right Column: Text Block -->
+    <div style="width:300px; vertical-align: top; display: inline-block; padding-right: 16px;">
+      <div style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.4; color: #000; padding-top: 30px;">
+        <!-- Title -->
+        <p style="margin: 0; font-size: 20px; color: #e74c3c; font-family: Helvetica;">
+          <strong>SERVIÇOS</strong>
+        </p>
+        <!-- Description -->
+        <p style="margin: 0; padding-top: 5px;">
+          Os nossos serviços proporcionam uma solução integrada em todo o ciclo imobiliário.
+        </p>
+        <!-- Service List -->
+        <div style="margin-top: 10px;">
+          <!-- First Row -->
+          <div style="display: flex; align-items: center; line-height: 30px;">
+            <div style="flex: 1;">
+              <p style="margin: 0; font-size: 12px; font-family: Helvetica;">
+                <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/icon_ponto_quadrado.jpg?1737539973119" alt="" style="vertical-align: middle;" /> Agência
+              </p>
+            </div>
+            <div style="flex: 1;">
+              <p style="margin: 0; font-size: 12px; font-family: Helvetica;">
+                <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/icon_ponto_quadrado.jpg?1737539973119" alt="" style="vertical-align: middle;" /> Investimento
+              </p>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div style="display: flex; align-items: center; line-height: 30px; margin-top: 5px;">
+            <div style="flex: 1;">
+              <p style="margin: 0; font-size: 12px; font-family: Helvetica;">
+                <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/icon_ponto_quadrado.jpg?1737539973119" alt="" style="vertical-align: middle;" /> Building Consultancy &amp; Management
+              </p>
+            </div>
+            <div style="flex: 1;">
+              <p style="margin: 0; font-size: 12px; font-family: Helvetica;">
+                <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/icon_ponto_quadrado.jpg?1737539973119" alt="" style="vertical-align: middle;" /> Avaliações &amp; Consultoria
+              </p>
+            </div>
+          </div>
+          <!-- Third Row -->
+          <div style="line-height: 30px; margin-top: 5px;">
+            <p style="margin: 0; font-size: 12px; font-family: Helvetica;">
+              <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/icon_ponto_quadrado.jpg?1737539973119" alt="" style="vertical-align: middle;" /> Sustentabilidade &amp; ESG
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Services Section -->
+<!-- Insert your footer section here -->
+<!-- Footer Section -->
+<div id="footer" style="max-width:600px; margin:0 auto; background-color:#e2061e; font-family: Arial, Helvetica, sans-serif; color:#ffffff;">
+  <div style="display: flex; flex-wrap: nowrap; padding: 10px;">
+    <!-- Left Column -->
+    <div style="width:280px; padding: 0 10px; vertical-align: top;">
+      <!-- Logo Block -->
+      <div style="text-align: left; background-color:#e2061e; padding: 5.71% 0;">
+        <a href="https://bprime.pt/" target="_blank" style="text-decoration:none;">
+          <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/logo_footer.png" 
+               alt="Logo Footer" 
+               style="vertical-align: middle; width:24.64%;" />
+        </a>
+      </div>
+      <!-- Address & Contact -->
+      <div style="padding:16px 0;">
+        <p style="margin:0; font-size:10px; line-height:1.2;">Av. da Liberdade 180E 3º Dto</p>
+        <p style="margin:0; font-size:10px; line-height:1.2;">1250-146 Lisboa</p>
+        <p style="margin:0; font-size:10px; line-height:1.2;">(+351) 211 570 000</p>
+        <p style="margin:0; font-size:9px; line-height:1.2;">Chamada para linha fixa nacional</p>
+      </div>
+    </div>
+    <!-- Spacer -->
+    <div style="width:20px;"></div>
+    <!-- Right Column -->
+    <div style="width:280px; padding: 0 10px; vertical-align: top;">
+      <div style="padding-top:40px;">
+        <p style="margin:0; font-size:14px; font-weight:bold;">SIGA-NOS</p>
+      </div>
+      <div style="padding:4px 40px 4px 0;">
+        <a href="https://www.linkedin.com/company/b.-prime/" target="_blank" style="text-decoration:none;">
+          <img src="https://file-eu.clickdimensions.com/bprimept-apxtu/files/in-blue-34.png?1737540330819" 
+               alt="LinkedIn" 
+               style="width:32px; height:32px; margin:5px;" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
